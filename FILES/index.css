@@ -1,3 +1,16 @@
+
+html, body, #root {
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  height: 100%;
+  color: #FFE7BA;
+
+}
+#root {
+	background-image: url(op.jpg);
+	background-size: 100% 120%;
+	background-attachment:fixed;
+	
+}
 .active {
   background: green;
 }
@@ -9,6 +22,8 @@
 .navi {
 	position: absolute;
 	width:20%;
+	font-size: 20px;
+	text-align: center;
 
 	border:solid;
 	height: 100%;
@@ -25,4 +40,16 @@
 .rightpara {
 	position: absolute;
 	left:50%;
+}
+
+.testone {
+	margin:10px !important;
+	 ;
+}
+
+.toolone {
+
+	position: absolute;
+	top: 245px;
+	width:400px;
 }

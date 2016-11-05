@@ -1,14 +1,10 @@
-module.exports = {
-  entry: './index.js',
 
-  output: {
-    filename: 'bundle.js',
-    publicPath: ''
-  },
+module.exports = function(webpackConfig) {
+  webpackConfig.babel.plugins.push('transform-runtime');
+  webpackConfig.babel.plugins.push(['import', {
+    libraryName: 'antd',
+    style: 'css',
+  }]);
 
-  module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015&presets[]=react' }
-    ]
-  }
-}
+  return webpackConfig;
+};
